@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIGHT BOWL</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* General body and section styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+        }
+       
+
+        /* Full background image styling */
+        .bg {
+            background-image: url("image.png");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+            text-align:left;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Card container styling */
+        .card-container {
+            background: #6b6969;
+            border-radius: 8px;
+            color: #fff;
+            max-width: 300px;
+        }
+
+        /* Image styling to cover full card width */
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        /* Card text styling */
+        .card-heading {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .card-pag {
+            font-size: 16px;
+            color: #070707;
+            padding: 10px;
+        }
+
+        /* Centered content */
+        .card-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .ingredient-input {
+            background-color: #6b6969;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .suggest-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .suggest-button:hover {
+            background-color: #45a049;
+        }
+        .navbar {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            .ingredient-input {
+                background-color: #6b6969;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .suggest-button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .suggest-button:hover {
+                background-color: #45a049;
+            }
+             /* Card container styling */
+        /* Doctor card styling */
+        .doctor-card {
+            background-color:#e7dede;;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .doctor-card:hover {
+            transform: scale(1.05);
+        }
+
+        .doctor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .consult-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .consult-button:hover {
+            background-color: #45a049;
+        }
+        #home {
+    background-image: url('image.png'); /* Replace 'image.png' with your actual background image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+}
+.img{
+    height:10vh;
+}
+        
+    </style>
+</head>
+<body>
+         <!-- Login Page -->
+   
+    <!-- Navbar -->
+   
+    <div id="home" class="section bg-dark text-white d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="container card-wrapper p-4" style="background-color: rgba(0, 0, 0, 0.8); border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <div class="row align-items-center">
+               
+                <div class="col-md-6">
+                    <h1 style="font-family:Papyrus; color:#95a145">TASTE THE GOODNESS OF HEALTH</h1>
+                    <h3 style="font-family:Copperplate;">About us:</h1>
+                    <p  style="font-family:Lucida Handwriting;">At BrightBowl, we understand that "healthy" actually means something different to everyone. So we've worked tirelessly to ensure that this site offers options no matter what your taste, cooking experience, or dietary preferences are.</p>
+                    <p  style="font-family:Lucida Handwriting;">Our recipes are loaded with nutrients, fiber, and protein. They're designed to help you feel nourished and satiated. We believe that this is the real secret to eating well.</p>
+                    <p  style="font-family:Lucida Handwriting;">Our recipes feature nutritious, whole food ingredients that you can feel good about and that can easily be found at your local supermarket. We believe that the first step to healthy eating begins simply with cooking at home. Knowing what goes into your food is the best way to get the most out of it.</p>
+                </div>
+                
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="img12.png" alt="Healthy Food" class="img-fluid rounded" style="max-width: 100%; border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Bright Bowl (1).png" width="80" alt="Bright Bowl Logo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home">HOME</a>
+                    <a class="nav-link" href="#recipes">RECIPES</a>
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#recipeModal">INGRIEDIENT-BASED RECIPE</a>
+                    <a class="nav-link" href="#nutritionists">NUTRITIONISTS</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal for Recipe Suggestions -->
+    <div class="modal fade" id="recipeModal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #222; color: white; border-radius: 10px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipeModalLabel">Ingredient-Based Recipie Generator</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Enter Ingredients You Have:</h6>
+                    <input type="text" id="ingredients" class="ingredient-input" placeholder="e.g., tomato, onion, chicken">
+                    <button class="suggest-button" onclick="suggestRecipes()">Get Recipes</button>
+                    <div id="suggested-recipes" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function suggestRecipes() {
+            const userIngredients = document.getElementById('ingredients').value.toLowerCase();
+            const recipes = [
+                {
+                    name: 'Mediterranean Bowl',
+                    ingredients: ['quinoa', 'tomato', 'cucumber', 'lemon'],
+                    image: 'https://www.themediterraneandish.com/wp-content/uploads/2023/12/Mediterranean-Bowls-16.jpg',
+                },
+                {
+                    name: '7-Ingredient Lentil Soup',
+                    ingredients: ['lentil', 'carrot', 'celery', 'onion'],
+                    image: 'https://italianfoodforever.com/wp-content/uploads/2008/05/lentilsoup7-500x357.jpg',
+                },
+                {
+                    name: 'Eggplant Rollatini',
+                    ingredients: ['eggplant', 'cheese', 'tomato', 'basil'],
+                    image: 'https://twosleevers.com/wp-content/uploads/2023/07/Eggplant-Rollatini-1-900x900.png',
+                },
+                {
+                    name: 'Easy Kale Soup',
+                    ingredients: ['kale', 'tomato', 'bean', 'garlic'],
+                    image: 'https://www.eatingwell.com/thmb/fsrBF6OLGOURmY8UUQwHernuGBQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8328360-d87718e843274a2faf1036ec210cdef1.jpg',
+                }
+            ];
+
+            const inputIngredients = userIngredients.split(',').map(ingredient => ingredient.trim());
+            const matchingRecipes = recipes.filter(recipe => 
+                inputIngredients.every(input => recipe.ingredients.includes(input))
+            );
+
+            const suggestedRecipesDiv = document.getElementById('suggested-recipes');
+            suggestedRecipesDiv.innerHTML = '';
+
+            if (matchingRecipes.length > 0) {
+                matchingRecipes.forEach(recipe => {
+                    suggestedRecipesDiv.innerHTML += `
+                        <div style="margin-bottom: 20px;">
+                            <img src="${recipe.image}" alt="${recipe.name}" style="width: 100%; max-width: 300px; border-radius: 10px;">
+                            <h4>${recipe.name}</h4>
+                        </div>
+                    `;
+                });
+            } else {
+                suggestedRecipesDiv.innerHTML = '<p>No matching recipes found. Try different ingredients!</p>';
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    
+
+   
+    <div id="recipes" class="section">
+        <h1 style="font-family:Papyrus; text-align:center; color:#95a145;" >RECIPIES</h1>
+               
+        <div class="container card-wrapper">
+            <!-- Mediterranean Bowl Card -->
+            <div class="card-container">
+                <img src="https://www.themediterraneandish.com/wp-content/uploads/2023/12/Mediterranean-Bowls-16.jpg" class="card-image" alt="Mediterranean Bowl">
+                <div class="card-content">
+                    <h2 class="card-heading">MEDITERRANEAN BOWL</h2>
+                    <p class="card-pag">Try this Mediterranean Bowl with colorful veggies, quinoa, and a creamy lemon tahini sauce.</p>
+                </div>
+            </div>
+
+            <!-- 7-Ingredient Lentil Soup Card -->
+            <div class="card-container">
+                <img src="https://italianfoodforever.com/wp-content/uploads/2008/05/lentilsoup7-500x357.jpg" class="card-image" alt="7-Ingredient Lentil Soup">
+                <div class="card-content">
+                    <h2 class="card-heading">7-INGREDIENT LENTIL SOUP</h2>
+                    <p class="card-pag">This hearty lentil soup is loaded with plant-based protein, making it a perfect dinner choice.</p>
+                </div>
+            </div>
+
+            <!-- Eggplant Rollatini Card -->
+            <div class="card-container">
+                <img src="https://twosleevers.com/wp-content/uploads/2023/07/Eggplant-Rollatini-1-900x900.png" class="card-image" alt="Eggplant Rollatini">
+                <div class="card-content">
+                    <h2 class="card-heading">EGGPLANT ROLLATINI</h2>
+                    <p class="card-pag">Tender eggplant strips filled with creamy cheese, baked in savory tomato sauce.</p>
+                </div>
+            </div>
+
+            <!-- Easy Kale Soup Card -->
+            <div class="card-container">
+                <img src="https://www.eatingwell.com/thmb/fsrBF6OLGOURmY8UUQwHernuGBQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8328360-d87718e843274a2faf1036ec210cdef1.jpg" class="card-image" alt="Easy Kale Soup">
+                <div class="card-content">
+                    <h2 class="card-heading">EASY KALE SOUP</h2>
+                    <p class="card-pag">A quick kale soup with bold flavors of tomatoes, beans, and kale ready in 30 minutes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Bright Bowl (1).png" width="80" alt="Bright Bowl Logo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home">HOME</a>
+                    <a class="nav-link" href="#recipes">RECIPES</a>
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#recipeModal">INGRIENT-BASED RECIPIE GENERATOR</a>
+                    <a class="nav-link" href="#nutritionists">NUTRITIONISTS</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal for Recipe Suggestions -->
+    <div class="modal fade" id="recipeModal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #222; color: white; border-radius: 10px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipeModalLabel">AI Recipe Suggestions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Enter Ingredients You Have:</h6>
+                    <input type="text" id="ingredients" class="ingredient-input" placeholder="e.g., tomato, onion, chicken">
+                    <button class="suggest-button" onclick="suggestRecipes()">Get Recipes</button>
+                    <div id="suggested-recipes" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function suggestRecipes() {
+            const userIngredients = document.getElementById('ingredients').value.toLowerCase();
+            const recipes = [
+                {
+                    name: 'Mediterranean Bowl',
+                    ingredients: ['quinoa', 'tomato', 'cucumber', 'lemon'],
+                    image: 'https://www.themediterraneandish.com/wp-content/uploads/2023/12/Mediterranean-Bowls-16.jpg',
+                },
+                {
+                    name: '7-Ingredient Lentil Soup',
+                    ingredients: ['lentil', 'carrot', 'celery', 'onion'],
+                    image: 'https://italianfoodforever.com/wp-content/uploads/2008/05/lentilsoup7-500x357.jpg',
+                },
+                {
+                    name: 'Eggplant Rollatini',
+                    ingredients: ['eggplant', 'cheese', 'tomato', 'basil'],
+                    image: 'https://twosleevers.com/wp-content/uploads/2023/07/Eggplant-Rollatini-1-900x900.png',
+                },
+                {
+                    name: 'Easy Kale Soup',
+                    ingredients: ['kale', 'tomato', 'bean', 'garlic'],
+                    image: 'https://www.eatingwell.com/thmb/fsrBF6OLGOURmY8UUQwHernuGBQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8328360-d87718e843274a2faf1036ec210cdef1.jpg',
+                }
+            ];
+
+            const inputIngredients = userIngredients.split(',').map(ingredient => ingredient.trim());
+            const matchingRecipes = recipes.filter(recipe => 
+                inputIngredients.every(input => recipe.ingredients.includes(input))
+            );
+
+            const suggestedRecipesDiv = document.getElementById('suggested-recipes');
+            suggestedRecipesDiv.innerHTML = '';
+
+            if (matchingRecipes.length > 0) {
+                matchingRecipes.forEach(recipe => {
+                    suggestedRecipesDiv.innerHTML += `
+                        <div style="margin-bottom: 20px;">
+                            <img src="${recipe.image}" alt="${recipe.name}" style="width: 100%; max-width: 300px; border-radius: 10px;">
+                            <h4>${recipe.name}</h4>
+                        </div>
+                    `;
+                });
+            } else {
+                suggestedRecipesDiv.innerHTML = '<p>No matching recipes found. Try different ingredients!</p>';
+            }
+        }
+    </script>
+   
+    <div id="nutritionists" class="section">
+        <h1 style="font-family:Papyrus; text-align:center; color:#95a145;" >NUTRITIONISTS</h1>
+        <div class="container d-flex justify-content-center gap-4 flex-wrap">
+            <!-- Doctor Card 1 -->
+            <div class="doctor-card">
+                <img src="OIP.jpg" alt="Doctor Profile" class="doctor-img">
+                <h3 class="doctor-name">Dr. Emma Collins</h3>
+                <p class="specialization">Nutritionist</p>
+                <p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+                <button class="consult-button">Book Consultation</button>
+            </div>
+            
+           
+            <div class="doctor-card">
+                <img src="surgeon-768x768.jpg" alt="Doctor Profile" class="doctor-img">
+                <h3 class="doctor-name">Dr. John Smith</h3>
+                <p class="specialization">Dietitian</p>
+                <p class="rating">⭐⭐⭐⭐ (4.7)</p>
+                <button class="consult-button">Book Consultation</button>
+            </div>
+            <div class="doctor-card">
+                <img src="OIP (2).jpg" alt="Doctor Profile" class="doctor-img">
+                <h3 class="doctor-name">Dr. Kyla</h3>
+                <p class="specialization">Dietitian</p>
+                <p class="rating">⭐⭐⭐⭐ (4.7)</p>
+                <button class="consult-button">Book Consultation</button>
+            </div>
+            <div class="doctor-card">
+                <img src="OIP (1).jpg"  alt="Doctor Profile" class="doctor-img">
+                <h3 class="doctor-name">Dr. Raymond </h3>
+                <p class="specialization">Dietitian</p>
+                <p class="rating">⭐⭐⭐⭐ (4.7)</p>
+                <button class="consult-button">Book Consultation</button>
+            </div>
+        </div>
+    </div>
+   
+
+
+    
+    <div id="contact" class="section text-center text-white">
+        <h1 style="font-family:Papyrus; text-align:center; color:#95a145;" >CONTACT US</h1>
+        <div class="container">
+            
+            <p style="font-size:24px;">Reach out for personalized nutrition advice and more!</p><br>
+            <p style="font-size:20px; color:#6b6969">Gmail: xyz@gmail.com</p>
+            <p style="font-size:20px; color:#6b6969">Ph no: 123456789</p>
+            <img src="28020.png" class="img"/>
+        </div>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Define your valid credentials
+            const validUsername = "admin";
+            const validPassword = "12345";
+
+            if (username === validUsername && password === validPassword) {
+                // Redirect to your main website
+                window.location.href = "https://www.yourwebsite.com";
+            } else {
+                // Show error message
+                document.getElementById("message").style.display = "block";
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popper
